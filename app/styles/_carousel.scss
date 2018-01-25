@@ -1,0 +1,17 @@
+.ui.slider.carousel{
+  .slick-prev{
+    z-index: 4;
+    left:25px;
+
+
+
+  }
+  .slick-next{
+    z-index: 4;
+    right:25px;
+
+  }
+  .slick-dots{
+    bottom:30px;
+  }
+}

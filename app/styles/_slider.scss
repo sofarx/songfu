@@ -1,0 +1,123 @@
+.ui.slider{
+  .item{
+    position: relative;
+    overflow: hidden;
+
+
+    .container{
+    display:flex;
+    position: relative;
+    flex-direction: row;
+    z-index: 2;
+    align-items: center;
+    justify-content: space-between;
+
+      .floatmbp{
+        width: 50%;
+        align-items:flex-end;
+
+          }
+    }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color:#FFFFFF;
+    padding-top: 12%;
+    padding-bottom: 18%;
+    align-items: left;
+    align-self: center;
+
+     .header{
+       font-size: 48px;
+       margin:0;
+       margin-bottom: 16px;
+     }
+     .sub.header{
+       font-size: 18px;
+       letter-spacing: 4px;
+       margin-bottom: 8px;
+     }
+    .discription{
+      font-size: 24px;
+      margin-bottom: 32px;
+      font-weight: 600;
+    }
+    .colorful-button{
+      width:auto;
+      height:auto;
+    }
+  }
+
+  .bgimg{
+    width: 100%;
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    z-index: 1;
+    }
+    .block{
+      width: 60%;
+      position: absolute;
+      z-index: 0;
+    }
+    .image{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+    .mb-image{
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .container{
+        order:2
+        }
+      .content{
+        align-items: center;
+        text-align: center;
+        height: auto;
+      .header{
+        font-size: 24px;
+      }
+      .sub.header{
+        font-size: 16px;
+        letter-spacing: 8px;
+      }
+      .discription{
+        font-size: 16px;
+      }
+      .colorful-button{
+        font-size: 16px;
+        margin-bottom: 20px;
+
+      }
+      }
+      .bgimg{
+        display:none;
+        }
+
+      .mb-image{
+        display: block;
+        width: 100%;
+        position: inherit;
+        order:1;
+        padding: auto;
+        margin:0;
+      }
+      .floatmbp{
+        display:none;
+      }
+    }
+  }
+}
