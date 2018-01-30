@@ -49,6 +49,25 @@ $('.ui.slider.carousel')
               ]
 
 })
+/**
+modal
+**/
+$('.ui.xcx.modal')
+  .modal('attach events','.ui .xcx.colorful-button','show')
+/**
+online-kefu
+**/
+$('.ui.kefu-modal.modal')
+  .modal('attach events','.online-kefu','show')
 
 
+  /**
+  scrolltop
+  **/
+
+  $('.scrolltop')
+  .click(function() {
+    $('body').animate({
+      scrollTop: 0}, 500);
+  })
   }) ()
