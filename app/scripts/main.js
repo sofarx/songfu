@@ -59,6 +59,8 @@ online-kefu
 **/
 $('.ui.kefu-modal.modal')
   .modal('attach events','.online-kefu','show')
+  $('.ui.kefu-modal.modal')
+      .modal('attach events','.online-kefu-body','show')
 
 
   /**

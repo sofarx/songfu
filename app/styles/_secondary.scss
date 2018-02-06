@@ -1,0 +1,35 @@
+.about-songfu-top{
+  background-color: #f3f3f3;
+  height: 708px;
+  width: 100%;
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10%;
+    padding-left: 10%;
+    width: 50%;
+    .songfu-logo{
+      width: 70%;
+    }
+    .header{
+      display: inline-block;
+      color: #000000;
+      font-size: 30px;
+      text-align: left;
+      margin: 10px;
+      margin-left: 20px;
+      margin-bottom: 16px;
+      line-height: 35px;
+
+    }
+    .description{
+      color:#000000;
+      font-size: 16px;
+      padding: 10px;
+      margin: 10px;
+      text-align: left;
+      line-height: 30px;
+    }
+  }
+}
