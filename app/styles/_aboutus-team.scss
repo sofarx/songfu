@@ -1,0 +1,114 @@
+.songfu-team,.joinus{
+  background-color: #F3F3F3;
+  padding-top: 50px;
+  .ui.container{
+    height: 659px;
+    width: 100%;
+    .content{
+      text-align: center;
+      .header{
+        display: inline-block;
+        font-size: 30px;
+        text-align: center;
+        margin: 10px;
+        margin-bottom: 16px;
+        line-height: 35px;
+        border-bottom: 4px solid #EE4C25;
+
+      }
+      .description{
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+    .team-fuli{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 30px;
+      .item{
+        text-align: center;
+        margin: 30px;
+        max-width: 300px;
+        .fuli-tubiao{
+          width: 100%;
+          max-width: 150px;
+        }
+        .header{
+          font-size: 26px;
+          line-height: 28px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        .description{
+          font-size: 16px;
+          opacity: 0.6;
+          padding-top: 10px;
+          padding-bottom: 20px;
+        }
+
+      }
+    }
+  }
+}
+
+.songfu-office{
+  background-color: #F3F3F3;
+  .ui.grid{
+    padding-left:5%;
+    padding-right: 5%;
+    .column{
+
+      .images{
+        text-align: center;
+        img{
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    }
+  }
+}
+.joinus{
+  text-align: center;
+
+  .ui.container{
+    height: auto;
+  .zhaoping{
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+  }
+}
+}
+
+@media screen and (max-width:767px) {
+  .songfu-team{
+    .ui.container{
+      .content{
+        .header{
+          font-size: 20px;
+        }
+        .description{
+          font-size: 14px;
+        }
+      }
+      .team-fuli{
+        padding: 5px;
+        .item{
+          margin:5px;
+          .header{
+            font-size: 20px;
+          }
+          .description{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+}

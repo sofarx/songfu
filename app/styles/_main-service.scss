@@ -153,7 +153,10 @@
       .content{
         width:auto;
         .header{
-          font-size: 16px;
+          font-size: 20px;
+        }
+        .description{
+          font-size: 14px;
         }
       }
     }
@@ -161,7 +164,10 @@
       .ui.container{
           .content{
             .header{
-              font-size: 24px;
+              font-size: 20px;
+            }
+            .description{
+              font-size: 14px;
             }
             }
             .stats{
@@ -178,7 +184,7 @@
           .ui.container{
             flex-direction: column;
             text-align: center;
-            letter-spacing: 8px;
+            letter-spacing: 2px;
             .anniu{
               margin-top: 20px;
               display: flex;
