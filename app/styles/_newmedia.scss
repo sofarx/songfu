@@ -1,0 +1,26 @@
+.newmedia{
+    overflow:hidden;
+    margin-bottom: 20px;
+    text-align: center;
+    img{
+      width:100vw;
+      max-width: 1440px;
+      height: auto;
+      object-fit: cover;
+      }
+  }
+  .newmedia-1{
+      overflow:hidden;
+      margin-bottom: 20px;
+      text-align: center;
+
+      img{
+        width:60vw;
+        max-width: 780px;
+        height: auto;
+        object-fit: cover;
+        }
+    }
+.sub-daohang{
+  text-align: center;
+}
