@@ -1,5 +1,7 @@
 .ui.navbar {
   background: #272C2C;
+
+
   .header >img{
     padding:8px;
     box-sizing:content-box;
@@ -111,6 +113,46 @@
   }
 }
 
+.sub-daohang{
+
+  border-bottom: 1px solid rgba(255,255,255,0.33);
+  width: 100%;
+  margin-bottom: 20px;
+
+  .content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+    justify-content: space-around;
+    .header{
+      color: white;
+      opacity: 0.2;
+      align-self: center;
+      margin-bottom: 0;
+      width: 200px;
+      &:hover{
+        opacity:0.85;
+        cursor: pointer;
+      }
+    }
+    .menu{
+      margin-top: 0;
+      font-size: 16px;
+      text-align: right;
+    }
+  }
+  &.fixed{
+    background-color: #272c2c;
+    opacity: 0.8;
+    padding: 5px;
+    .header{
+      color: #FFFFFF;
+      opacity: 0.9;
+
+    }
+  }
+}
 
 @media screen and (min-width:767px) {
   .ui.navbar{
@@ -157,5 +199,9 @@
     transform: translateY(-40px);
     opacity: 1;
     }
+  }
+  .sub-daohang ,.sub-daohang.placeholder{
+    display: none;
+    height: 0px;
   }
 }

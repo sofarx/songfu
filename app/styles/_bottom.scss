@@ -32,6 +32,17 @@
   }
 }
 
+.right-down{
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+  &:hover{
+    opacity:1;
+  }
 
 .online-kefu , .online-kefu-mobile{
   font-size: 14px;
@@ -42,34 +53,54 @@
   float: left;
   color: #ffffff;
   background: #E64340;
-  position: fixed;
-  z-index: 9999;
-  bottom: 25%;
-  right: 0;
   text-decoration: none;
+  cursor: pointer;
   .zaixian {
   line-height: 40px;
   height: 35px;
+
   }
 }
-  .online-kefu-mobile{
-    display: none;
+.wxgzh{
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+.up-to-top{
+  background: #272c2c;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  float: left;
+  text-decoration: none;
+  cursor: pointer;
+  i{
+    font-size: 48px;
+    color: #ffffff;
+    padding-top: 15px;
   }
+}
+.online-kefu-mobile{
+  display: none;
+}
+}
 
 
-@media only screen and (max-width: 767px) {
+
+@media only screen and (max-width: 640px) {
     .ui.bottom{
       .container{
         .grid{
           text-align: center;
-
         }
       }
     }
+    .right-down{
       .online-kefu{
         display: none;
       }
       .online-kefu-mobile{
         display:inline;
       }
+    }
 }

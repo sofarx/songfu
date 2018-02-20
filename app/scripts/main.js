@@ -20,6 +20,45 @@
     }
   )
 
+  $('.sub-daohang')
+  .visibility({type:'fixed'})
+
+  $('.ui.secondary.menu .item')
+  .click(function () {
+    let id =$(this).attr('href')
+    let $element =$(id)
+    let position = $element.offset().top - 60
+
+    $('body')
+    .animate({
+      scrollTop:position
+    },500)
+  })
+
+//设置当前导航栏 未完成；
+  // $('secion')
+  // .visibility({
+  //   observeChanges:false,
+  //   once:flase,
+  //   offset:120,
+  //   onTopPassed:sectionHandle,
+  //   onBottomPassedReverse: sectionHandle,
+  // })
+  // function sectionHandle() {
+  //   let $currentSection=$(this)
+  //   let index=$('.section').index($currentSection)
+  //   let $subNavMenuItem=$('.sub-daohang .menu >.item')
+  //   let $subNavMenuActiveItem= $subNavMenuItem.eq(index)
+  //
+  //   $subNavMenuItem
+  //   .filter('.active')
+  //   .removeClass('active')
+  //
+  //   $subNavMenuActiveItem
+  //   .addClass('active')
+  //
+  // }
+
   /**
    * sidebar
    */
@@ -59,9 +98,11 @@ online-kefu
 **/
 $('.ui.kefu-modal.modal')
   .modal('attach events','.online-kefu','show')
+  .modal('attach events','.close-kefu','close')
   $('.ui.kefu-modal.modal')
       .modal('attach events','.online-kefu-body','show')
-
+  $('.wx-qrcode.modal')
+  .modal('attach events','.wxgzh','show')
 
   /**
   scrolltop
@@ -73,3 +114,33 @@ $('.ui.kefu-modal.modal')
       scrollTop: 0}, 500);
   })
   }) ()
+
+  /**
+* scollReveal
+   **/
+window.sr = ScrollReveal({reset:true})
+sr.reveal('.songfu-tech .header',100)
+sr.reveal('.songfu-tech .description',100)
+sr.reveal('.songfu-tech .image',100)
+sr.reveal('.songfu-mutimedia .header',100)
+sr.reveal('.songfu-mutimedia .description',100)
+sr.reveal('.songfu-mutimedia .image',100)
+sr.reveal('.kefu .content',100)
+sr.reveal('.kefu .anniu',100)
+sr.reveal('.ui.buttom',100)
+
+sr.reveal('.about-songfu-top .img.songfu-logo',100)
+sr.reveal('.about-songfu-top .header',100)
+sr.reveal('.about-songfu-top .description',100)
+sr.reveal('.about-songfu-top .lacapital',100)
+sr.reveal('.songfu-story .bgimg',100)
+sr.reveal('.songfu-story .songfu-company-name',100)
+sr.reveal('.songfu-story .songfu-story-content >.content',100)
+sr.reveal('.songfu-team .header',100)
+sr.reveal('.songfu-team .description',100)
+sr.reveal('.songfu-team .team-fuli >.item',100)
+sr.reveal('.songfu-team .songfu-offce >.grid',100)
+sr.reveal('.joinus .header',100)
+sr.reveal('.joinus .description',100)
+sr.reveal('.joinus .zhaoping',100)
+sr.reveal('.songfu-office .grid >.column',100)
