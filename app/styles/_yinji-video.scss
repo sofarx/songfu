@@ -1,0 +1,65 @@
+.songfu-mutimedia{
+  .ui.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  .content{
+    color:#FFFFFF;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    .header{
+      display: inline-block;
+      font-size: 30px;
+      text-align: center;
+      margin: 10px;
+      margin-left: 20px;
+      margin-bottom: 16px;
+      line-height: 35px;
+      border-bottom: 4px solid #EE4C25;
+    }
+    .description{
+      color:#C7D2E0;
+      font-size: 16px;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+  .video-image{
+    text-align: center;
+    .image{
+      width: 80%;
+    }
+  }
+  .video-service{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+    .image{
+        width: 80%;
+        height: 80%;
+        padding: 10px;
+    }
+}
+}
+}
+
+@media screen and (max-width:767px) {
+  .songfu-mutimedia .ui.container{
+  .video-service{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .image{
+        width: 80%;
+        height: 80%;
+        padding: 10px;
+    }
+}
+}
+}

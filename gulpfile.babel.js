@@ -80,7 +80,12 @@ gulp.task('styles', () => {
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
     'app/styles/**/*.scss',
-    'app/styles/**/*.css'
+    'app/styles/**/*.css',
+    'node_modules/material-design-icons/iconfont/material-icons.css',
+    'node_modules/slick-carousel/slick/slick.css',
+    'node_modules/slick-carousel/slick/slick-theme.css'
+
+
   ])
     .pipe($.newer('.tmp/styles'))
     .pipe($.sourcemaps.init())
@@ -105,7 +110,10 @@ gulp.task('scripts', () =>
       // Note: Since we are not using useref in the scripts build pipeline,
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
-      './app/scripts/main.js'
+      './app/scripts/main.js',
+      './node_modules/jquery/dist/jquery.min.js',
+      './node_modules/slick-carousel/slick/slick.min.js',
+      './node_modules/scrollreveal/dist/scrollreveal.min.js'
       // Other scripts
     ])
       .pipe($.newer('.tmp/scripts'))
@@ -113,6 +121,7 @@ gulp.task('scripts', () =>
       .pipe($.babel())
       .pipe($.sourcemaps.write())
       .pipe(gulp.dest('.tmp/scripts'))
+      .pipe(gulp.dest('dist/scripts'))
       .pipe($.concat('main.min.js'))
       .pipe($.uglify({preserveComments: 'some'}))
       // Output files
@@ -124,7 +133,7 @@ gulp.task('scripts', () =>
 
 // Scan your HTML for assets & optimize them
 gulp.task('html', () => {
-  return gulp.src('app/**/*.html')
+  return gulp.src('app/*.html')
     .pipe($.useref({
       searchPath: '{.tmp,app}',
       noAssets: true
@@ -170,7 +179,7 @@ gulp.task('serve', ['scripts', 'styles'], () => {
     port: 3300
   });
 
-  gulp.watch(['app/**/*.html'], reload);
+  gulp.watch(['app/*.html'], reload);
   gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['app/scripts/**/*.js'], ['lint', 'scripts', reload]);
   gulp.watch(['app/images/**/*'], reload);

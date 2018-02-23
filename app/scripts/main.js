@@ -118,7 +118,7 @@ $('.ui.kefu-modal.modal')
   /**
 * scollReveal
    **/
-window.sr = ScrollReveal({reset:true})
+window.sr = ScrollReveal({reset:true,mobile:false})
 sr.reveal('.songfu-tech .header',100)
 sr.reveal('.songfu-tech .description',100)
 sr.reveal('.songfu-tech .image',100)
