@@ -1,0 +1,82 @@
+.songfu-tech{
+  height:auto;
+}
+.songfu-keji{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .content{
+    color:#FFFFFF;
+    align-self: center;
+    flex-grow: 1;
+    width:300px;
+
+
+    .header{
+      display: inline-block;
+      font-size: 30px;
+      text-align: left;
+      margin: 10px;
+      margin-left: 20px;
+      margin-bottom: 16px;
+      line-height: 35px;
+      border-bottom: 4px solid #EE4C25;
+    }
+    .description{
+      color:#C7D2E0;
+      font-size: 16px;
+      padding: 10px;
+      margin: 10px;
+      text-align: left;
+      line-height: 30px;
+    }
+  }
+  .image{
+      text-align: center;
+      .tech-image{
+        width:80%;
+        align-self: center;
+        padding: 20px;
+
+
+      }
+  }
+  }
+  .songfu-tech-case{
+    .content{
+      color:#FFFFFF;
+      align-self: center;
+      text-align: center;
+
+      .header{
+        display: inline-block;
+        font-size: 30px;
+        text-align: center;
+        margin: 10px;
+        margin-left: 20px;
+        margin-bottom: 16px;
+        line-height: 35px;
+        border-bottom: 4px solid #EE4C25;
+      }
+      .description{
+        color:#C7D2E0;
+        font-size: 16px;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        line-height: 30px;
+      }
+    }
+    .ui.bottom.tab.segment{
+      background-color: transparent;
+      align-self: center;
+      .case-image{
+        align-items: center;
+        padding: 10px;
+
+      }
+
+    }
+
+  }

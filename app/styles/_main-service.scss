@@ -6,6 +6,7 @@
   .songfu-tech{
     height:auto;
   }
+
   .songfu-keji{
     display:flex;
     flex-direction: row;
@@ -35,6 +36,9 @@
         margin: 10px;
         text-align: left;
         line-height: 30px;
+      }
+      .tech-more{
+        text-align: center;
       }
     }
     .image{

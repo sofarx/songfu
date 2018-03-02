@@ -113,34 +113,64 @@ $('.ui.kefu-modal.modal')
     $('body').animate({
       scrollTop: 0}, 500);
   })
-  }) ()
+
+
+    /**
+  * scollReveal
+     **/
+  window.sr = ScrollReveal({reset:true,mobile:false})
+  sr.reveal('.songfu-tech .header',100)
+  sr.reveal('.songfu-tech .description',100)
+  sr.reveal('.songfu-tech .image',100)
+  sr.reveal('.songfu-mutimedia .header',100)
+  sr.reveal('.songfu-mutimedia .description',100)
+  sr.reveal('.songfu-mutimedia .image',100)
+  sr.reveal('.kefu .content',100)
+  sr.reveal('.kefu .anniu',100)
+  sr.reveal('.ui.buttom',100)
+
+  sr.reveal('.about-songfu-top .img.songfu-logo',100)
+  sr.reveal('.about-songfu-top .header',100)
+  sr.reveal('.about-songfu-top .description',100)
+  sr.reveal('.about-songfu-top .lacapital',100)
+  sr.reveal('.songfu-story .bgimg',100)
+  sr.reveal('.songfu-story .songfu-company-name',100)
+  sr.reveal('.songfu-story .songfu-story-content >.content',100)
+  sr.reveal('.songfu-team .header',100)
+  sr.reveal('.songfu-team .description',100)
+  sr.reveal('.songfu-team .team-fuli >.item',100)
+  sr.reveal('.songfu-team .songfu-offce >.grid',100)
+  sr.reveal('.joinus .header',100)
+  sr.reveal('.joinus .description',100)
+  sr.reveal('.joinus .zhaoping',100)
+  sr.reveal('.songfu-office .grid >.column',100)
 
   /**
-* scollReveal
+  * tab-item for caseshow
    **/
-window.sr = ScrollReveal({reset:true,mobile:false})
-sr.reveal('.songfu-tech .header',100)
-sr.reveal('.songfu-tech .description',100)
-sr.reveal('.songfu-tech .image',100)
-sr.reveal('.songfu-mutimedia .header',100)
-sr.reveal('.songfu-mutimedia .description',100)
-sr.reveal('.songfu-mutimedia .image',100)
-sr.reveal('.kefu .content',100)
-sr.reveal('.kefu .anniu',100)
-sr.reveal('.ui.buttom',100)
+  $('.tabular.menu .item').tab()
 
-sr.reveal('.about-songfu-top .img.songfu-logo',100)
-sr.reveal('.about-songfu-top .header',100)
-sr.reveal('.about-songfu-top .description',100)
-sr.reveal('.about-songfu-top .lacapital',100)
-sr.reveal('.songfu-story .bgimg',100)
-sr.reveal('.songfu-story .songfu-company-name',100)
-sr.reveal('.songfu-story .songfu-story-content >.content',100)
-sr.reveal('.songfu-team .header',100)
-sr.reveal('.songfu-team .description',100)
-sr.reveal('.songfu-team .team-fuli >.item',100)
-sr.reveal('.songfu-team .songfu-offce >.grid',100)
-sr.reveal('.joinus .header',100)
-sr.reveal('.joinus .description',100)
-sr.reveal('.joinus .zhaoping',100)
-sr.reveal('.songfu-office .grid >.column',100)
+  $('.item.o2obutton')
+    .on('click', function() {
+      // programmatically activating tab
+      $.tab('change tab', 'o2o');
+    })
+  $('.item.xcxbutton')
+      .on('click', function() {
+        // programmatically activating tab
+        $.tab('change tab', 'xcx');
+      })
+      $('.item.livebutton')
+        .on('click', function() {
+          // programmatically activating tab
+          $.tab('change tab', 'live');
+        })
+      $('.item.appbutton')
+          .on('click', function() {
+            // programmatically activating tab
+            $.tab('change tab', 'app-dev');
+          })
+
+
+
+  }) ()
